@@ -1,0 +1,27 @@
+.cart-items {
+  max-height: 20rem;
+  overflow-y: scroll;
+}
+.display-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  border-bottom: 1px solid rgb(166, 14, 14);
+}
+.name {
+  font-weight: bold;
+  font-style: italic;
+}
+.numbers {
+  background-color: #f3e6d9;
+  margin-left: 2rem;
+}
+.add-delete {
+  text-align: right;
+}
+.price {
+  color: #5a1a01;
+  font-size: small;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
