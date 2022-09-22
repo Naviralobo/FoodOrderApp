@@ -18,6 +18,24 @@
 }
 .add-delete {
   text-align: right;
+  justify-content: space-between;
+}
+.addButton {
+  background-color: transparent;
+  border: 1px solid #8a2b06;
+  padding: 0.1rem 1rem;
+  border-radius: 6px;
+  margin-left: 0.25rem;
+  font-size: large;
+}
+.deleteButton {
+  background-color: transparent;
+  border: 1px solid #8a2b06;
+  padding: 0.1rem 1.1rem;
+  border-radius: 6px;
+  margin-left: 0.25rem;
+  margin-right: 0.25 rem;
+  font-size: large;
 }
 .price {
   color: #5a1a01;

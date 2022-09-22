@@ -2,8 +2,11 @@ import React, { useContext } from "react";
 import CartCntxt from "../../Store/CartContext";
 import classes from "./CartItems.module.css";
 
-const CartItems = (props) => {
+const CartItems = () => {
   const cartCntxt = useContext(CartCntxt);
+  const removeAddedItem = (item) => {
+    cartCntxt.removeItem(item);
+  };
   return (
     <ul className={classes["cart-items"]}>
       {cartCntxt.items.map((item) => (
@@ -16,8 +19,22 @@ const CartItems = (props) => {
             </div>
           </div>
           <div className={classes["add-delete"]}>
-            <button>+</button>
-            <button>-</button>
+            <button
+              className={classes.addButton}
+              onClick={() => {
+                cartCntxt.addItem(item);
+              }}
+            >
+              +
+            </button>
+            <button
+              className={classes.deleteButton}
+              onClick={() => {
+                removeAddedItem(item);
+              }}
+            >
+              -
+            </button>
           </div>
         </li>
       ))}
